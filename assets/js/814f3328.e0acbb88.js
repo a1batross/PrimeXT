@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprimext_docs=self.webpackChunkprimext_docs||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Alpha release 25.10.2021","permalink":"/PrimeXT/blog/alpha-oct-2021"}]}')}}]);
