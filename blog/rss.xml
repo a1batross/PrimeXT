@@ -7,13 +7,17 @@
         <lastBuildDate>Mon, 25 Oct 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
         <item>
             <title><![CDATA[Alpha release 25.10.2021]]></title>
             <link>https://snmetamorph.github.io/PrimeXT/blog/alpha-oct-2021</link>
             <guid>alpha-oct-2021</guid>
             <pubDate>Mon, 25 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[This is first ever release of PrimeXT, so it somehow works, but it a lot of things to fix and implement, therefore feel free to report about bugs and glitches to GitHub issues.]]></description>
-            <content:encoded><![CDATA[<p>This is first ever release of PrimeXT, so it somehow works, but it a lot of things to fix and implement, therefore feel free to report about bugs and glitches to GitHub issues.</p><h1>Known issues</h1><ul><li><code>r_sun_allowed</code> should be 0</li><li><code>r_occlusion_culling</code> should be 0</li><li>Invalid game directory name in <code>_start_primext.cmd</code> file (should be <code>primext</code> instead <code>xash</code>)</li></ul><h1>Installation</h1><ol><li>Download and install <a href="https://github.com/FWGS/xash3d-fwgs/releases/tag/continuous">Xash3D FWGS engine build</a> (select <code>win32-i386</code> package)<br/>Keep in mind that Xash3D FWGS continious builds only supported, vanilla Xash3D or old FWGS builds will not work properly.</li><li>Download PrimeXT build <a href="https://github.com/SNMetamorph/PrimeXT/releases/download/alpha/primext_build_25102021.zip">.zip file</a></li><li>Copy PrimeXT files to same folder where engine binaries located.</li><li>Start game using <code>_start_primext.cmd</code> file</li></ol>]]></content:encoded>
+            <content:encoded><![CDATA[<p>This is first ever release of PrimeXT, so it somehow works, but it a lot of things to fix and implement, therefore feel free to report about bugs and glitches to GitHub issues.</p><h1>Known issues</h1><ul><li><code>r_sun_allowed</code> should be 0</li><li><code>r_occlusion_culling</code> should be 0</li><li>Invalid game directory name in <code>_start_primext.cmd</code> file (should be <code>primext</code> instead <code>xash</code>)</li></ul><h1>Installation</h1><ol><li>Download and install <a href="https://github.com/FWGS/xash3d-fwgs/releases/tag/continuous" target="_blank" rel="noopener noreferrer">Xash3D FWGS engine build</a> (select <code>win32-i386</code> package)<br>Keep in mind that Xash3D FWGS continious builds only supported, vanilla Xash3D or old FWGS builds will not work properly.</li><li>Download PrimeXT build <a href="https://github.com/SNMetamorph/PrimeXT/releases/download/alpha/primext_build_25102021.zip" target="_blank" rel="noopener noreferrer">.zip file</a></li><li>Copy PrimeXT files to same folder where engine binaries located.</li><li>Start game using <code>_start_primext.cmd</code> file</li></ol>]]></content:encoded>
+            <category>primext</category>
+            <category>alpha</category>
+            <category>release</category>
         </item>
     </channel>
 </rss>
