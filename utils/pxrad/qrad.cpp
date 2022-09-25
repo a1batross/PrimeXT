@@ -67,6 +67,7 @@ bool		g_extra = DEFAULT_EXTRAMODE;
 bool		g_nomodelshadow = false;
 bool		g_lightbalance = false;
 bool		g_onlylights = false;
+bool		g_hdr_mode = true;
 float		g_smoothing_threshold;		// cosine of smoothing angle(in radians)
 char		source[MAX_PATH] = "";
 uint		g_gammamode = DEFAULT_GAMMAMODE;
@@ -2476,7 +2477,7 @@ show compiler usage like ZHLT
 */
 static void PrintRadUsage( void )
 {
-	Msg( "\n-= %s Options =-\n\n", APP_ABBREVIATION );
+	Msg( "\n-= %s options =-\n\n", APP_ABBREVIATION );
 	Msg( "    -dev #         : compile with developer message (1 - 4). default is %d\n", DEFAULT_DEVELOPER );
 	Msg( "    -threads #     : manually specify the number of threads to run\n" );
  	Msg( "    -extra         : improve lighting quality with lightmap filtering\n" );
@@ -2493,6 +2494,7 @@ static void PrintRadUsage( void )
 	Msg( "    -balance       : -dscale will be interpret as global scaling factor\n" );
 	Msg( "    -dirty         : enable dirtmapping (baked AO)\n" );
 	Msg( "    -onlylights    : update only worldlights lump\n" );
+	Msg( "    -compat        : enable compatibility with GoldSrc, XashXT, P2\n" );
 #ifdef HLRAD_PARANOIA_BUMP
 	Msg( "    -gammamode #   : gamma correction mode (0, 1, 2)\n" );
 #endif
@@ -2628,6 +2630,10 @@ int main( int argc, char **argv )
 		else if( !Q_strcmp( argv[i], "-dirty" ))
 		{
 			g_dirtmapping = !g_fastmode;
+		}
+		else if (!Q_strcmp(argv[i], "-compat"))
+		{
+			g_hdr_mode = false;
 		}
 #ifdef HLRAD_PARANOIA_BUMP
 		else if( !Q_strcmp( argv[i], "-gammamode" ))
