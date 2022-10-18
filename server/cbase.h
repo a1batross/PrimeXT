@@ -242,9 +242,9 @@ public:
 
 	// PhysX description
 	unsigned char	m_iActorType;	// static, kinetic or dynamic
-	int		m_iActorFlags;	// NxActor->flags
-	int		m_iBodyFlags;	// NxBodyDesc->flags
-	short		m_usActorGroup;	// NxActor->group
+	uint32_t		m_iActorFlags;	// NxActor->flags
+	uint32_t		m_iBodyFlags;	// NxBodyDesc->flags
+	uint32_t		m_iFilterData[4];	// NxActor->group
 	float		m_flBodyMass;	// NxActor->mass
 	BOOL		m_fFreezed;	// is body sleeps?
 	bool		m_isChaining;

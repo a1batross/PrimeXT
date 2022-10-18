@@ -43,7 +43,6 @@ public:
 	virtual void	SetAvelocity( CBaseEntity *pEntity, const Vector &velocity ) = 0;
 	virtual void	MoveObject( CBaseEntity *pEntity, const Vector &finalPos ) = 0;
 	virtual void	RotateObject( CBaseEntity *pEntity, const Vector &finalAngle ) = 0;
-	virtual void	SetLinearMomentum( CBaseEntity *pEntity, const Vector &velocity ) = 0;
 	virtual void	AddImpulse( CBaseEntity *pEntity, const Vector &impulse, const Vector &position, float factor ) = 0;
 	virtual void	AddForce( CBaseEntity *pEntity, const Vector &force ) = 0;
 	virtual void	EnableCollision( CBaseEntity *pEntity, int fEnable ) = 0;
