@@ -124,6 +124,12 @@ typedef struct material_s
 	int		flags;			// brush material flags
 } material_t;
 
+typedef struct texture_ext_s
+{
+	material_t		*material;	// pointer to texture material
+	struct matdef_t	*effects;	// hit, impact, particle effects etc
+} texture_ext_t;
+
 typedef struct texture_s
 {
 	char		name[16];
@@ -136,9 +142,12 @@ typedef struct texture_s
 	struct texture_s	*alternate_anims;	// bmodels in frame 1 use these
 	unsigned short	fb_texturenum;	// auto-luma texturenum
 	unsigned short	dt_texturenum;	// detail-texture binding
-	material_t		*material;	// pointer to texture material
-	struct matdef_t	*effects;	// hit, impact, particle effects etc
-	intptr_t		unused;		// reserved, to match size of engine struct
+	texture_ext_t	*extra;
+#if XASH_64BIT
+	uint32_t unused[1];
+#else
+	uint32_t unused[2];
+#endif
 } texture_t;
 
 typedef struct
